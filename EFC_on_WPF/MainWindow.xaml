@@ -1,0 +1,116 @@
+﻿<Window x:Class="EFC_on_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:EFC_on_WPF"
+        mc:Ignorable="d"
+        Title="Entity Framework edit database" Height="685" Width="1300">
+    <DockPanel>
+        <DockPanel LastChildFill="False" Width="650" HorizontalAlignment="Left">
+            <TextBlock TextWrapping="Wrap" TextAlignment="Center" Height="30" Text="Edit Employees" Width="650" DockPanel.Dock="Top"/>
+            <!--<ComboBox Width="650" Height="30" HorizontalAlignment="Right" DockPanel.Dock="Top">
+                <TextBlock>Add</TextBlock>
+                <TextBlock>Delete</TextBlock>
+                <TextBlock>Edit</TextBlock>
+            </ComboBox>
+            -->
+            <Grid Width="650" Height="30" DockPanel.Dock="Top">
+                <TextBox x:Name="Employee_Id_box" TextWrapping="Wrap" Text="" Width="540" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Id" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Grid>
+            <Grid Width="650" Height="30" DockPanel.Dock="Top">
+                <TextBox x:Name="Employee_Name_box" TextWrapping="Wrap" Text="" Width="540" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Name" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Grid>
+            <Grid Width="650" Height="30" DockPanel.Dock="Top">
+                <TextBox x:Name="Employee_LastName_box" TextWrapping="Wrap" Text="" Width="540" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="LastName" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Grid>
+            <Grid Width="650" Height="30" DockPanel.Dock="Top">
+                <TextBox x:Name="Employee_ProfessionId_box" TextWrapping="Wrap" Text="" Width="540" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="ProfessionId" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Grid>
+            <Grid Width="650" Height="30" DockPanel.Dock="Top">
+                <TextBox x:Name="Employee_DepartmentId_box" TextWrapping="Wrap" Text="" Width="540" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="DepartmentId" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Grid>
+            <Grid Width="650" Height="30" DockPanel.Dock="Top">
+                <TextBox x:Name="Employee_ManagerId_box" TextWrapping="Wrap" Text="" Width="540" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="ManagerId" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Grid>
+            <Grid Width="650" Height="30" DockPanel.Dock="Top">
+                <TextBox x:Name="Employee_Salary_box" TextWrapping="Wrap" Text="" Width="540" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                <TextBlock TextWrapping="Wrap" Text="Salary" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            </Grid>
+            <Grid DockPanel.Dock="Top">
+                <Button x:Name="Employee_Add" Content="Add" Width="110" Height="30" HorizontalAlignment="Left" Click="Employee_Add_Clicked"/>
+                <Button x:Name="Employee_Edit" Content="Edit" Width="110" Height="30" HorizontalAlignment="Center" Click="Employee_Edit_Clicked"/>
+                <Button x:Name="Employee_Delete" Content="Delete" Width="110" Height="30" HorizontalAlignment="Right" Click="Employee_Delete_Clicked"/>
+            </Grid>
+            <ListView x:Name="Employees_View" Width="650" >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="50" DisplayMemberBinding="{Binding Path=Id}">Id</GridViewColumn>
+                        <GridViewColumn Width="100" DisplayMemberBinding="{Binding Path=Name}">Name</GridViewColumn>
+                        <GridViewColumn Width="100" DisplayMemberBinding="{Binding Path=LastName}">LastName</GridViewColumn>
+                        <GridViewColumn Width="100" DisplayMemberBinding="{Binding Path=ProfessionId}">ProfessionId</GridViewColumn>
+                        <GridViewColumn Width="100" DisplayMemberBinding="{Binding Path=DepartmentId}">DepartmentId</GridViewColumn>
+                        <GridViewColumn Width="100" DisplayMemberBinding="{Binding Path=ManagerId}">ManagerId</GridViewColumn>
+                        <GridViewColumn Width="100" DisplayMemberBinding="{Binding Path=Salary}">Salary</GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </DockPanel>
+        <DockPanel LastChildFill="False" Width="650">
+            <DockPanel LastChildFill="False" Width="640" Height="140" DockPanel.Dock="Top">
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center" Height="30" Text="Edit Professions" Width="650" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
+                <Grid Width="640" Height="30" DockPanel.Dock="Top" HorizontalAlignment="Center">
+                    <TextBox x:Name="Profession_Id_box" TextWrapping="Wrap" Text="" Width="530" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Id" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                </Grid>
+                <Grid Width="640" Height="30" DockPanel.Dock="Top" HorizontalAlignment="Center">
+                    <TextBox x:Name="Profession_Name_box" TextWrapping="Wrap" Text="" Width="530" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Name" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                </Grid>
+                <Grid DockPanel.Dock="Bottom">
+                    <Button x:Name="Profession_Add" Content="Add" Width="110" Height="30" HorizontalAlignment="Left" Click="Profession_Add_Clicked"/>
+                    <Button x:Name="Profession_Edit" Content="Edit" Width="110" Height="30" HorizontalAlignment="Center" Click="Profession_Edit_Clicked"/>
+                    <Button x:Name="Profession_Delete" Content="Delete" Width="110" Height="30" HorizontalAlignment="Right" Click="Profession_Delete_Clicked"/>
+                </Grid>
+            </DockPanel>
+            <ListView x:Name="Professions_View" Width="650" Height="200" DockPanel.Dock="Top" >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="50" DisplayMemberBinding="{Binding Path=Id}">Id</GridViewColumn>
+                        <GridViewColumn Width="100" DisplayMemberBinding="{Binding Path=Name}">Name</GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+            <DockPanel LastChildFill="False" Width="640" Height="130" DockPanel.Dock="Top">
+                <TextBlock TextWrapping="Wrap" TextAlignment="Center" Height="30" Text="Edit Departments" Width="650" HorizontalAlignment="Center" DockPanel.Dock="Top"/>
+                <Grid Width="640" Height="30" DockPanel.Dock="Top" HorizontalAlignment="Center">
+                    <TextBox x:Name="Department_Id_box" TextWrapping="Wrap" Text="" Width="530" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Id" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                </Grid>
+                <Grid Width="640" Height="30" DockPanel.Dock="Top" HorizontalAlignment="Center">
+                    <TextBox x:Name="Department_Name_box" TextWrapping="Wrap" Text="" Width="530" Height="30" HorizontalAlignment="Right" VerticalAlignment="Top"/>
+                    <TextBlock TextWrapping="Wrap" Text="Name" Height="30" Width="100" TextAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+                </Grid>
+                <Grid DockPanel.Dock="Bottom">
+                    <Button x:Name="Department_Add" Content="Add" Width="110" Height="30" HorizontalAlignment="Left" Click="Department_Add_Clicked"/>
+                    <Button x:Name="Department_Edit" Content="Edit" Width="110" Height="30" HorizontalAlignment="Center" Click="Department_Edit_Clicked"/>
+                    <Button x:Name="Department_Delete" Content="Delete" Width="110" Height="30" HorizontalAlignment="Right" Click="Department_Delete_Clicked"/>
+                </Grid>
+            </DockPanel>
+            <ListView x:Name="Departments_View" Width="650" Height="200" DockPanel.Dock="Top" >
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Width="50" DisplayMemberBinding="{Binding Path=Id}">Id</GridViewColumn>
+                        <GridViewColumn Width="100" DisplayMemberBinding="{Binding Path=Name}">Name</GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </DockPanel>
+    </DockPanel>
+</Window>
