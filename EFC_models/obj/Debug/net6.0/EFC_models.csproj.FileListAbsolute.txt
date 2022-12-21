@@ -1,0 +1,14 @@
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\bin\Debug\net6.0\EFC_models.deps.json
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\bin\Debug\net6.0\EFC_models.runtimeconfig.json
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\bin\Debug\net6.0\EFC_models.dll
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\bin\Debug\net6.0\EFC_models.pdb
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\obj\Debug\net6.0\EFC_models.csproj.AssemblyReference.cache
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\obj\Debug\net6.0\EFC_models.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\obj\Debug\net6.0\EFC_models.AssemblyInfoInputs.cache
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\obj\Debug\net6.0\EFC_models.AssemblyInfo.cs
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\obj\Debug\net6.0\EFC_models.csproj.CoreCompileInputs.cache
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\obj\Debug\net6.0\EFC_models.dll
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\obj\Debug\net6.0\refint\EFC_models.dll
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\obj\Debug\net6.0\EFC_models.pdb
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\obj\Debug\net6.0\EFC_models.genruntimeconfig.cache
+C:\Users\madre\source\repos\EFC_on_WPF\EFC_models\obj\Debug\net6.0\ref\EFC_models.dll
