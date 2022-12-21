@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33122.133
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_on_WPF", "EFC_on_WPF\EFC_on_WPF.csproj", "{CD8EDFFA-66E8-409A-A74C-00F8A8652896}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFC_models", "EFC_models\EFC_models.csproj", "{F16B3666-773F-47A4-81CE-E0F6C0006245}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD8EDFFA-66E8-409A-A74C-00F8A8652896}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD8EDFFA-66E8-409A-A74C-00F8A8652896}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD8EDFFA-66E8-409A-A74C-00F8A8652896}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD8EDFFA-66E8-409A-A74C-00F8A8652896}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F16B3666-773F-47A4-81CE-E0F6C0006245}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F16B3666-773F-47A4-81CE-E0F6C0006245}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F16B3666-773F-47A4-81CE-E0F6C0006245}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F16B3666-773F-47A4-81CE-E0F6C0006245}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E9BEBA0-70B9-48BF-8700-8BB2E8124021}
+	EndGlobalSection
+EndGlobal
